@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "applenbanananapplencherry" | sort | uniq -u
+sort | uniq -u
