@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -execdir printf "%sn" "{}" +
+find . -empty -execdir printf "%sn" {} +
