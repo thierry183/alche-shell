@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -printf "%fn"
+find . -empty -exec sh -c 'for f do printf "%sn" "${f##*/}"; done' sh {} +
