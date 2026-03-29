@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "12345" | rev
+echo "Love sometimes ends with silence, but memories remain; blocking cannot erase the moments once shared between two hearts." |rev
