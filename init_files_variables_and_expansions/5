@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "enter file name: " file
+read -p "enter the command: " cmd
+
+echo -e  "#!/bin/bash\n${cmd}" > ${file}
+chmod u+x ${file}
+
+git add .
+git commit -m "added file ${file}"
+git push
