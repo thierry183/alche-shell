@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((2#$WATER + 2#$STIR))
+echo $(( $(echo $WATER | tr 'ewatr' '01234') + $(echo $STIR | tr 'tir.' '0123') )) | tr '0123456789' 'bestchol'
