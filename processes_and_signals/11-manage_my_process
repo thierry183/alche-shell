@@ -16,7 +16,7 @@ case $1 in
         # Check if PID file exists
         if [ -f $PID_FILE ]; then
             # Kill the process
-            kill $(cat $PID_FILE)
+            kill "$(cat $PID_FILE)"
             # Remove PID file
             rm -f $PID_FILE
             echo "manage_my_process stopped"
@@ -27,7 +27,7 @@ case $1 in
     restart)
         # Stop the process if running
         if [ -f $PID_FILE ]; then
-            kill $(cat $PID_FILE)
+            kill "$(cat $PID_FILE)"
             rm -f $PID_FILE
         fi
         # Start new process
